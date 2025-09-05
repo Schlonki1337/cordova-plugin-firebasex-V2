@@ -189,7 +189,7 @@
 				<pod name="GoogleSignIn" spec="7.1.0"/>
 				<pod name="GoogleTagManager"/>
 				<pod name="gRPC-C++" spec="1.62.0"/>
-				<pod name="BoringSSL-GRPC" spec="0.0.24"/>
+				<pod name="BoringSSL-GRPC" spec="0.0.32"/>
 </pods>
 
 		</podspec>
