@@ -188,6 +188,8 @@
 				<pod name="FirebaseInstallations" spec="10.24.0"/>
 				<pod name="GoogleSignIn" spec="7.1.0"/>
 				<pod name="GoogleTagManager"/>
+				<pod name="gRPC-C++"/>
+    			<pod name="BoringSSL-GRPC"/>
 </pods>
 
 		</podspec>
