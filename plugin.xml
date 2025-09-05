@@ -126,7 +126,7 @@
 		<hook type="before_plugin_uninstall" src="scripts/ios/before_plugin_uninstall.js" />
 
 		<preference name="IOS_USE_PRECOMPILED_FIRESTORE_POD" default="false" />
-		<preference name="IOS_FCM_ENABLED" default="true" />
+		<preference name="IOS_FCM_ENABLED" default="false" />
 
 		<js-module name="FirebasePlugin" src="www/firebase.js">
 			<clobbers target="FirebasePlugin" />
