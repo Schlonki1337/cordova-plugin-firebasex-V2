@@ -191,6 +191,8 @@
 
   <hooks>
     <hook type="cocoapods" src="scripts/podhooks.rb"/>
+	<hook type="before_build" src="scripts/ios-build-extras.rb" platform="ios" />
+
   </hooks>
 </podspec>
 
