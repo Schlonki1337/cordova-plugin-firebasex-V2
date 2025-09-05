@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-firebasex" version="18.0.7"
+<plugin id="cordova-plugin-firebasex-V2" version="18.0.7"
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
@@ -15,17 +15,17 @@
 	</engines>
 
 	<preference name="FIREBASE_ANALYTICS_COLLECTION_ENABLED" default="true" />
-	<preference name="FIREBASE_PERFORMANCE_COLLECTION_ENABLED" default="true" />
-	<preference name="FIREBASE_CRASHLYTICS_COLLECTION_ENABLED" default="true" />
-	<preference name="FIREBASE_FCM_AUTOINIT_ENABLED" default="true" />
-	<preference name="FIREBASE_ANALYTICS_WITHOUT_ADS" default="false" />
+	<preference name="FIREBASE_PERFORMANCE_COLLECTION_ENABLED" default="false" />
+	<preference name="FIREBASE_CRASHLYTICS_COLLECTION_ENABLED" default="false" />
+	<preference name="FIREBASE_FCM_AUTOINIT_ENABLED" default="false" />
+	<preference name="FIREBASE_ANALYTICS_WITHOUT_ADS" default="true" />
 	<preference name="FIREBASE_MESSAGING_IMMEDIATE_PAYLOAD_DELIVERY" default="false" />
 
-	<preference name="GOOGLE_ANALYTICS_ADID_COLLECTION_ENABLED" default="true" />
+	<preference name="GOOGLE_ANALYTICS_ADID_COLLECTION_ENABLED" default="false" />
 	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE" default="true" />
-	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE" default="true" />
-	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA" default="true" />
-	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS" default="true" />
+	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE" default="false" />
+	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA" default="false" />
+	<preference name="GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS" default="false" />
 
 	<platform name="android">
 		<preference name="ANDROID_ICON_ACCENT" default="#FF00FFFF" />
@@ -175,22 +175,21 @@
 				<source url="https://cdn.cocoapods.org/"/>
 			</config>
 			<pods use-frameworks="true">
-				<pod name="FirebaseCore" spec="11.8.0"/>
-				<pod name="FirebaseCoreExtension" spec="11.8.0"/>
-				<pod name="FirebaseAuth" spec="11.8.1"/>
-				<pod name="FirebaseAnalytics" spec="11.8.0"/>
-				<!--<pod name="FirebaseAnalyticsOnDeviceConversion" spec="11.8.0"/>-->
-				<pod name="FirebaseMessaging" spec="11.8.0"/>
-				<pod name="FirebasePerformance" spec="11.8.0"/>
-				<pod name="FirebaseRemoteConfig" spec="11.8.0"/>
-				<pod name="FirebaseInAppMessaging" spec="11.8.0-beta"/>
-				<pod name="FirebaseFirestore" spec="11.8.0"/>
-				<pod name="FirebaseCrashlytics" spec="11.8.0"/>
-				<pod name="FirebaseFunctions" spec="11.8.0"/>
-				<pod name="FirebaseInstallations" spec="11.8.0"/>
-				<pod name="GoogleSignIn" spec="7.1.0"/>
-				<pod name="GoogleTagManager" spec="8.0.0"/>
-			</pods>
+    <pod name="FirebaseCore"/>
+    <pod name="FirebaseCoreExtension"/>
+    <pod name="FirebaseAuth"/>
+    <pod name="FirebaseAnalytics"/>
+    <!--<pod name="FirebaseAnalyticsOnDeviceConversion"/>-->
+    <pod name="FirebasePerformance"/>
+    <pod name="FirebaseRemoteConfig"/>
+    <pod name="FirebaseFirestore"/>
+    <pod name="FirebaseCrashlytics"/>
+    <pod name="FirebaseFunctions"/>
+    <pod name="FirebaseInstallations"/>
+    <pod name="GoogleSignIn"/>
+    <pod name="GoogleTagManager"/>
+</pods>
+
 		</podspec>
 
 	</platform>
