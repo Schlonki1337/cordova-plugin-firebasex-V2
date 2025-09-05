@@ -171,28 +171,29 @@
 		<framework src="AuthenticationServices.framework" />
 
 		<podspec>
-			<config>
-				<source url="https://cdn.cocoapods.org/"/>
-			</config>
-			<pods use-frameworks="true">
-				<pod name="FirebaseCore" spec="10.24.0"/>
-				<pod name="FirebaseCoreExtension" spec="10.24.0"/>
-				<pod name="FirebaseAuth" spec="10.24.0"/>
-				<pod name="FirebaseAnalytics" spec="10.24.0"/>
-				<!--<pod name="FirebaseAnalyticsOnDeviceConversion" spec="10.24.0"/>-->
-				<pod name="FirebasePerformance" spec="10.24.0"/>
-				<pod name="FirebaseRemoteConfig" spec="10.24.0"/>
-				<pod name="FirebaseFirestore" spec="10.24.0"/>
-				<pod name="FirebaseCrashlytics" spec="10.24.0"/>
-				<pod name="FirebaseFunctions" spec="10.24.0"/>
-				<pod name="FirebaseInstallations" spec="10.24.0"/>
-				<pod name="GoogleSignIn" spec="7.1.0"/>
-				<pod name="GoogleTagManager"/>
-				<pod name="gRPC-C++" spec="1.62.0"/>
-				<pod name="BoringSSL-GRPC" spec="0.0.32"/>
-</pods>
+  <config>
+    <source url="https://cdn.cocoapods.org/"/>
+  </config>
+  <pods use-frameworks="true">
+    <pod name="FirebaseCore" spec="10.24.0"/>
+    <pod name="FirebaseCoreExtension" spec="10.24.0"/>
+    <pod name="FirebaseAuth" spec="10.24.0"/>
+    <pod name="FirebaseAnalytics" spec="10.24.0"/>
+    <pod name="FirebasePerformance" spec="10.24.0"/>
+    <pod name="FirebaseRemoteConfig" spec="10.24.0"/>
+    <pod name="FirebaseFirestore" spec="10.24.0"/>
+    <pod name="FirebaseCrashlytics" spec="10.24.0"/>
+    <pod name="FirebaseFunctions" spec="10.24.0"/>
+    <pod name="FirebaseInstallations" spec="10.24.0"/>
+    <pod name="GoogleSignIn" spec="7.1.0"/>
+    <pod name="GoogleTagManager"/>
+  </pods>
 
-		</podspec>
+  <hooks>
+    <hook type="cocoapods" src="scripts/podhooks.rb"/>
+  </hooks>
+</podspec>
+
 
 	</platform>
 
