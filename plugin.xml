@@ -193,7 +193,7 @@
 				<pod name="FirebaseFunctions" spec="10.22.0"/>
 				<pod name="FirebaseInstallations" spec="10.22.0"/>
 				<pod name="GoogleSignIn" spec="7.1.0"/>
-				<pod name="GoogleTagManager" spec="6.0.0"/>
+				<pod name="GoogleTagManager" spec="7.0.0"/>
 			</pods>
 		</podspec>
 
