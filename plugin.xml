@@ -127,17 +127,21 @@
 
 		<preference name="IOS_USE_PRECOMPILED_FIRESTORE_POD" default="false" />
 		<preference name="IOS_FCM_ENABLED" default="true" />
+		
 
 		<js-module name="FirebasePlugin" src="www/firebase.js">
 			<clobbers target="FirebasePlugin" />
 		</js-module>
+		
 		<config-file target="config.xml" parent="/*">
 			<feature name="FirebasePlugin">
 				<param name="ios-package" value="FirebasePlugin" />
 				<param name="onload" value="true" />
 			</feature>
+			<preference name="deployment-target" value="15.0" />
+        	<preference name="target-device" value="universal" />
 		</config-file>
-
+		
 		<config-file target="*/Entitlements-Debug.plist" parent="aps-environment">
 			<string>development</string>
 		</config-file>
